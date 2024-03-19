@@ -1,0 +1,37 @@
+/* LoquorPage.module.css */
+.pageContainer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 10px; /* Adjust as needed */
+    position: relative;
+  }
+  
+  .contentContainer {
+    padding-top: 2.5rem;
+  }
+  
+  .flexWrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .sidebar {
+    width: 100%;
+    padding-right: 0.5rem;
+  }
+  
+  .mainContent {
+    width: 100%;
+    padding-right: 0.5rem;
+  }
+  
+  @media (min-width: 1024px) {
+    .sidebar {
+      width: 25%;
+    }
+  
+    .mainContent {
+      width: 75%;
+    }
+  }
+  

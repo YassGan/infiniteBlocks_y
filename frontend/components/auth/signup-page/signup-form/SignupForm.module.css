@@ -1,0 +1,8 @@
+.connect-button button:first-child {
+    margin: auto;
+}
+
+.required:after { 
+    content:" *";
+    color:red;
+ }

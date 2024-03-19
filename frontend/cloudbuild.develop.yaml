@@ -1,0 +1,35 @@
+steps:
+- id: build
+  name: 'gcr.io/cloud-builders/docker'
+  entrypoint: 'bash'
+  args:
+  - '-c'
+  - |
+    echo "WALLET_CONNECT_PROJECT_ID=$$ifb-wallet-connect-project-id" >> .env.local
+    docker build -t ${LOCATION}-docker.pkg.dev/${PROJECT_ID}/infiniteblocks/website:${SHORT_SHA} .
+    docker push ${LOCATION}-docker.pkg.dev/${PROJECT_ID}/infiniteblocks/website:${SHORT_SHA}
+  secretEnv: ['ifb-wallet-connect-project-id']
+
+- id: deploy
+  name: 'gcr.io/cloud-builders/gcloud'
+  entrypoint: sh
+  args:
+  - '-c'
+  - | 
+      echo "***************************"
+      echo "${LOCATION}-docker.pkg.dev/${PROJECT_ID}/infiniteblocks/website:${SHORT_SHA}"
+      echo "***************************"
+
+      gcloud run services update ifb-webapp-dev \
+      --region=${LOCATION} \
+      --image=${LOCATION}-docker.pkg.dev/${PROJECT_ID}/infiniteblocks/website:${SHORT_SHA}
+
+
+options:
+  dynamicSubstitutions: true
+  logging: CLOUD_LOGGING_ONLY
+
+availableSecrets:
+  secretManager:
+  - versionName: projects/ifb-sandbox/secrets/ifb-wallet-connect-project-id/versions/1
+    env: 'ifb-wallet-connect-project-id'

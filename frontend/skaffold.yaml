@@ -1,0 +1,33 @@
+# To learn more about the skaffold.yaml schema visit
+# https://skaffold.dev/docs/references/yaml/
+
+# For the build part we are ko which enables fast, standardized, reproducible, configuration-less, Docker-less, and multi-platform container image builds for Go apps.
+ 
+apiVersion: skaffold/v4beta2
+kind: Config
+metadata:
+  name: ifb-webapp
+build:
+  artifacts:
+  - image: europe-west1-docker.pkg.dev/ifb-sandbox/infiniteblocks/website
+    context: ./
+    buildpacks:
+      clearCache: false
+      trustBuilder: false
+deploy:
+  cloudrun:
+    projectid: "ifb-sandbox"
+    region: "europe-west1"
+
+profiles:
+- name: ifb-webapp-staging
+  manifests:
+    kustomize:
+      paths: 
+      - cloudrun-manifests/overlays/staging/
+   
+- name: ifb-webapp-prod
+  manifests:
+    kustomize:
+      paths: 
+      - cloudrun-manifests/overlays/prod/

@@ -1,0 +1,59 @@
+/* LoquorElementsContainer.module.css */
+.container {
+    padding-top: 12px;
+    background-color: #181818;
+    border: 1px solid #4B5563;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section {
+    padding: 32px;
+  }
+  
+  .heading {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 16px;
+  }
+  
+  .button {
+    margin-top: 16px;
+    margin-left: 16px;
+    color: #ff3294;
+    cursor: pointer;
+
+  }
+  
+  .button:hover {
+    color: #ed99c2;
+  }
+  
+  /* Additional styles for alignment and responsiveness */
+  .flexCenterColumn {
+ margin-top: 40px;
+  }
+
+  /* styles.css */
+.playButtonContainer {
+  width: 4rem; /* Equivalent to w-16 */
+  height: 4rem; /* Equivalent to h-16 */
+  margin-bottom: 1rem; /* Equivalent to mb-4 */
+  background-color: #ff3294; /* Custom background color */
+  border-radius: 9999px; /* Equivalent to rounded-full */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.playButtonContainer:hover {
+  background-color: #ff6db4; /* Hover state background color */
+}
+
+.playButtonImage {
+  width: 50%; /* Equivalent to w-1/2 */
+}
+
+  

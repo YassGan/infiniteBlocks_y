@@ -1,0 +1,56 @@
+/* LoquorElement.module.css */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #181818;
+    padding: 16px;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    border-radius: 0.5rem;
+    height: 60px;
+  }
+  
+  .container:hover {
+    background-color: #282828;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .numberContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.25rem; /* text-xl */
+    width: 40px; /* w-10 */
+  }
+  
+  .image {
+    height: 32px; /* h-8 */
+    width: 32px; /* w-8 */
+    border-radius: 9999px; /* rounded-full */
+  }
+  
+  .title {
+    font-weight: 600; /* font-semibold */
+    color: white;
+  }
+  
+  .duration {
+    color: #9CA3AF; /* text-gray-400 */
+    font-size: 0.75rem; /* text-xs */
+  }
+  
+  .playButton {
+    display: none;
+    height: 24px; /* h-6 */
+    width: 24px; /* w-6 */
+  }
+  
