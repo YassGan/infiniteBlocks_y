@@ -1,3 +1,5 @@
+
+'use client'
 import React from 'react';
 import styles from './LoquorElement.module.css'; // Adjust the path as necessary
 
@@ -15,7 +17,7 @@ const LoquorElement = ({ number, title, duration, imageUrl }) => {
   return (
     <div       onMouseEnter={handleMouseEnter}
     onMouseLeave={handleMouseLeave}
-    style={{height:"60px"}} className={styles.container}>
+     className={styles.container}>
       <div className={styles.content}>
         <div className={styles.numberContainer}>
           <h5 id={`number-${number}`} className={styles.title}>

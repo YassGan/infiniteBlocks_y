@@ -38,6 +38,7 @@ const LoquorElementsContainer = ({ filters }) => {
     );
 
     return (
+        <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
         <div className={styles.container}>
             <div className={styles.section}>
             <div className={styles.playButtonContainer}>
@@ -76,6 +77,7 @@ const LoquorElementsContainer = ({ filters }) => {
                     />
                 </div>
             </div>
+        </div>
         </div>
     );
 };

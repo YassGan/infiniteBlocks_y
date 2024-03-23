@@ -5,6 +5,7 @@
     border: 1px solid #4B5563;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 94%;
   }
   
   .section {
@@ -30,18 +31,16 @@
     color: #ed99c2;
   }
   
-  /* Additional styles for alignment and responsiveness */
   .flexCenterColumn {
  margin-top: 40px;
   }
 
-  /* styles.css */
 .playButtonContainer {
-  width: 4rem; /* Equivalent to w-16 */
-  height: 4rem; /* Equivalent to h-16 */
-  margin-bottom: 1rem; /* Equivalent to mb-4 */
-  background-color: #ff3294; /* Custom background color */
-  border-radius: 9999px; /* Equivalent to rounded-full */
+  width: 4rem;
+  height: 4rem; 
+  margin-bottom: 1rem;
+  background-color: #ff3294; 
+  border-radius: 9999px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,11 +48,11 @@
 }
 
 .playButtonContainer:hover {
-  background-color: #ff6db4; /* Hover state background color */
+  background-color: #ff6db4;
 }
 
 .playButtonImage {
-  width: 50%; /* Equivalent to w-1/2 */
+  width: 50%; 
 }
 
   

@@ -1,0 +1,117 @@
+.filterContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+  }
+  
+  .filterInput,
+  .searchButton {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .tags {
+    background-color: #1f1f1f; /* Replace with your preferred color */
+    color: white;
+  }
+  
+  .date {
+    background-color: #1f1f1f; /* Replace with your preferred color */
+    color: white;
+  }
+  
+  .duration {
+    background-color: #1f1f1f; /* Replace with your preferred color */
+    color: white;
+  }
+  
+  .searchButton {
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .searchButton:hover {
+  }
+  
+  .backgroundc{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+  }
+
+  /* Add or adjust your existing styles */
+.durationDisplay {
+  color: black;
+  margin-left: 10px; /* Spacing from the range input */
+  display: flex; /* Keep it in line with the range input */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling the range input (slider) might require vendor prefixes and more specific selectors
+to address the thumb and track for full cross-browser compatibility. */
+.filterInput[type="range"] {
+  width: 30%; /* Full-width */
+  background: green; /* Remove default background */
+}
+
+.filterInput[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+
+
+
+
+.durationDisplay {
+  margin-left: 10px; /* Add space between the range input and its value display */
+  color: #fff; /* White text color */
+  background-color: #1f1f1f; /* Dark background for contrast */
+  padding: 5px 10px;
+  border-radius: 4px; /* Rounded corners for the display */
+}
+
+/* FilterComponent.module.css */
+/* ... existing styles ... */
+
+.searchInput {
+  padding: 10px;
+  margin-right: 8px; /* Spacing between input and search button */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.searchButton {
+  padding: 10px 15px;
+  background-color: #646cff;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.searchButton:hover {
+  background-color: #5a5fcf;
+}
+
+
+.searchBar{
+  font-size: 18px;
+  padding: 5px;
+  height: 45px;
+}
+
+
+
+
+/* Add more styles for the track and thumb for different browsers if needed */
