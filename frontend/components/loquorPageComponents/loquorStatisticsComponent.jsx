@@ -1,15 +1,13 @@
 import React from 'react';
-import styles from './LoquorStatisticsComponent.module.css'; // Adjust the path as necessary
+import styles from './LoquorStatisticsComponent.module.css'; 
 
 const LoquorStatisticsComponent = ({ title, numberOfLoquors, status }) => {
-  // Helper function to get the appropriate style based on status
   const getStatusStyle = () => {
     if (status === 'positive') {
       return styles.positive;
     } else if (status === 'negative') {
       return styles.negative;
     } else if (status === 'all') {
-      // Assuming 'all' will have a neutral or distinct style
       return styles.all;
     } else {
       return '';

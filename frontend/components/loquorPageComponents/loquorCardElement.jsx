@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './MusicCard.module.css'; // Ensure the path is correct
+import styles from './MusicCard.module.css';
 
 const MusicCard = ({ title, year, imageSrc, onPlay }) => {
   const [showOverlay, setShowOverlay] = useState(false);

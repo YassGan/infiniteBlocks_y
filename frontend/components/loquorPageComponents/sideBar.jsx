@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Sidebar.module.css'; // Adjust the path as necessary
+import styles from './Sidebar.module.css'; 
 
 const FilterSidebar = ({ filters, onFilterChange }) => {
   return (

@@ -54,8 +54,6 @@
     width: 24px; 
   }
   
-  /* LoquorElement.module.css */
-/* ... existing styles ... */
 
 .votingContainer {
   display: flex;
@@ -78,29 +76,11 @@
 }
 
 .tag {
-  background-color: #eee; /* Example color for the tag */
+  background-color: #eee; 
   color: #333;
   padding: 3px 6px;
   border-radius: 4px;
   font-size: 12px;
   margin-top: 10px;
-  display: inline-block; /* Allows for padding and margin */
-}
-
-/* Add CSS to target the webkit-slider-thumb for styling */
-input[type='range'].duration::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 25px; /* Width of the thumb */
-  height: 25px; /* Height of the thumb */
-  background: #4CAF50; /* Green background */
-  cursor: pointer; /* Cursor on hover */
-}
-
-/* Add CSS to target the moz-range-thumb for Firefox */
-input[type='range'].duration::-moz-range-thumb {
-  width: 25px; /* Width of the thumb */
-  height: 25px; /* Height of the thumb */
-  background: #4CAF50; /* Green background */
-  cursor: pointer; /* Cursor on hover */
+  display: inline-block; 
 }

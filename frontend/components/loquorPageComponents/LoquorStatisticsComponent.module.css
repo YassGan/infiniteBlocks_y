@@ -1,54 +1,54 @@
 .box {
-  background-color: #1f1f1f; /* Dark background */
-  color: #fff; /* White text color for readability */
+  background-color: #1f1f1f; 
+  color: #fff; 
   padding: 16px;
   border-radius: 8px;
   margin-bottom: 16px;
-  width: 100%; /* Take full width of the container */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
   margin: 50px;
-  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  transition: background-color 0.3s ease; 
 
 }
 
 
 .box:hover {
 
-  background-color: #3a3a3a; /* Dark background */
+  background-color: #3a3a3a; 
 
 }
 
 
 .title {
-  font-size: 20px; /* Slightly larger font for the title */
-  margin-bottom: 8px; /* Spacing between title and number */
-  font-weight: 500; /* Medium font weight */
+  font-size: 20px; 
+  margin-bottom: 8px;
+  font-weight: 500; 
 color: #fff;
 }
 
 .number {
-  font-size: 18px; /* Size for the number */
-  margin-bottom: 4px; /* Spacing between number and status */
+  font-size: 18px;
+  margin-bottom: 4px; 
 }
 
 .status {
-  font-size: 16px; /* Size for the status */
+  font-size: 16px; 
   font-weight: bold;
-  display: inline-block; /* To apply padding and color changes */
+  display: inline-block; 
   padding: 4px 8px;
   border-radius: 4px;
 }
 
 .positive {
-  background-color: #21ba45; /* Green background for positive status */
-  color: #fff; /* White text on green background */
+  background-color: #21ba45;
+  color: #fff; 
 }
 
 .negative {
-  background-color: #db2828; /* Red background for negative status */
-  color: #fff; /* White text on red background */
+  background-color: #db2828;
+  color: #fff;
 }
 
 .all {
-  background-color: rgb(189, 49, 138); /* Example: Light background */
+  background-color: rgb(189, 49, 138); 
 }

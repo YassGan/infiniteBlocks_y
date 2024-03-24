@@ -14,17 +14,17 @@
   }
   
   .tags {
-    background-color: #1f1f1f; /* Replace with your preferred color */
+    background-color: #1f1f1f; 
     color: white;
   }
   
   .date {
-    background-color: #1f1f1f; /* Replace with your preferred color */
+    background-color: #1f1f1f; 
     color: white;
   }
   
   .duration {
-    background-color: #1f1f1f; /* Replace with your preferred color */
+    background-color: #1f1f1f;
     color: white;
   }
   
@@ -44,20 +44,17 @@
     align-items: space-between;
   }
 
-  /* Add or adjust your existing styles */
 .durationDisplay {
   color: black;
-  margin-left: 10px; /* Spacing from the range input */
-  display: flex; /* Keep it in line with the range input */
+  margin-left: 10px;
+  display: flex; 
   justify-content: center;
   align-items: center;
 }
 
-/* Styling the range input (slider) might require vendor prefixes and more specific selectors
-to address the thumb and track for full cross-browser compatibility. */
 .filterInput[type="range"] {
-  width: 30%; /* Full-width */
-  background: green; /* Remove default background */
+  width: 30%;
+  background: green; 
 }
 
 .filterInput[type="range"]::-webkit-slider-thumb {
@@ -73,19 +70,17 @@ to address the thumb and track for full cross-browser compatibility. */
 
 
 .durationDisplay {
-  margin-left: 10px; /* Add space between the range input and its value display */
-  color: #fff; /* White text color */
-  background-color: #1f1f1f; /* Dark background for contrast */
+  margin-left: 10px;
+  color: #fff;
+  background-color: #1f1f1f;
   padding: 5px 10px;
-  border-radius: 4px; /* Rounded corners for the display */
+  border-radius: 4px; 
 }
 
-/* FilterComponent.module.css */
-/* ... existing styles ... */
 
 .searchInput {
   padding: 10px;
-  margin-right: 8px; /* Spacing between input and search button */
+  margin-right: 8px; 
   border: 1px solid #ccc;
   border-radius: 4px;
 }
@@ -114,4 +109,3 @@ to address the thumb and track for full cross-browser compatibility. */
 
 
 
-/* Add more styles for the track and thumb for different browsers if needed */

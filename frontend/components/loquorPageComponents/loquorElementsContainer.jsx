@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import LoquorElement from "./LoquorElement"; // Ensure correct paths
-import MusicCard from "./loquorCardElement"; // Ensure correct paths
-import styles from './LoquorElementsContainer.module.css'; // Update the path as needed
+import LoquorElement from "./LoquorElement"; 
+import MusicCard from "./loquorCardElement"; 
+import styles from './LoquorElementsContainer.module.css'; 
 
 const LoquorElementsContainer = ({ filters }) => {
   const trackList = [
@@ -70,7 +70,7 @@ const LoquorElementsContainer = ({ filters }) => {
                 <div className={styles.flexCenterColumn}>
                     <h2 className={styles.heading}>Latest Releases</h2>
                     <MusicCard 
-                        title="BUMZ" 
+                        title="BUMlmlmlmlmZ" 
                         year="2022" 
                         imageSrc="/images/loquorImages/3.jpeg" 
                         onPlay={handlePlay}

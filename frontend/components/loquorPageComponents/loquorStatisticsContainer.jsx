@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import LoquorStatisticsComponent from "./loquorStatisticsComponent"; // Ensure correct paths
-import styles from './loquorStatisticsContainer.module.css'; // Update the path as needed
+import LoquorStatisticsComponent from "./loquorStatisticsComponent"; 
+import styles from './loquorStatisticsContainer.module.css'; 
 
 const loquorStatisticsContainer = () => {
 
